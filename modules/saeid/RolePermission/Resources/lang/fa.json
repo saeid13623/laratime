@@ -1,0 +1,12 @@
+{
+    "manage role-permissions": "مدیریت نقش کاربری",
+    "manage-category" : "مدیریت دسته بندی",
+    "super_admin": "مدیرکل",
+    "teach": "تدریس",
+    "teacher": "مدرس",
+    "student": "دانشجو",
+
+    "manage-course": "مدیریت دوره ها",
+    "manage-users": "مدیریت کاربران",
+    "manage-own-course": "مدیریت دوره های خود"
+}

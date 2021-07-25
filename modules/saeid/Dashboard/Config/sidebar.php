@@ -1,0 +1,12 @@
+<?php
+return[
+    'items'=>[
+        'Dashboard'=>[],
+        'Category'=>[],
+        'Rolepermission'=>[],
+        'Courses'=>[],
+        'Users'=>[],
+        'UsersProfile'=>[],
+        'payments'=>[]
+        ]
+];

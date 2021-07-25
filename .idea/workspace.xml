@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9eae6b9c-547f-485a-865a-8d2f89920f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/saeid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/mobileRule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/passwordRule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/ValidationError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/userPhoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_11_193807_create_media_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_164803_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_25_175427_create_permission_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_02_144924_create_courses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_08_150234_create_seasons_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_14_185659_create_lessons_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_02_192645_create_course_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_06_072307_create_payments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Http/Requests/categoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Model/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Policies/CategoryPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Providers/categoriesProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Repositories/CategoryRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Resources/Views/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Resources/Views/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Category/Routes/category_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Commen/Providers/CommenProviders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Commen/Resources/View/layouts/feedbacks.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Commen/Responses/AjaxResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Commen/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Controllers/CourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Controllers/LessonController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Controllers/SeasonController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Requests/CourseRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Requests/LessonRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Http/Requests/SeasonRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Listeners/RegisterUserInTheCourse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Model/Course.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Model/Lesson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Model/Season.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Policies/CoursePolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Policies/LessonPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Policies/SeasonPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Providers/CourseServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Repository/CourseRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Repository/LessonRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Repository/SeasonRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/lesson/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/lesson/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/season/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/Views/season/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Routes/course_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Routes/lesson_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Routes/season_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Rules/ValidSeason.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Course/Rules/ValidTeacher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/Config/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/Providers/DashboardServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/Routes/dashboard_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/layout/breadcrumb.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/layout/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/layout/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/layout/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/layout/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Dashboard/resources/Views/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Http/Controllers/FrontController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Model/Front.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Providers/FrontServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Repositories/FrontRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/ads-top.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/episodes-list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/latestArticle.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/latestCourse.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/popularCourse.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/sidebar-banners.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/singleCourse.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/singleCourseBox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/slider.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/layout/top-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/Resources/Views/tutor.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Front/routes/front-route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Config/fileServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Contract/FileServiceContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Http/Controllers/MediaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Model/Media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Providers/MediaServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Services/DefaultFileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Services/MediaFileServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Services/ZipFileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Services/imageFileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/Services/videoFileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Media/routes/media_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Contracts/GatewayContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Events/PaymentWasSuccefull.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Gateways/Gateway.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Gateways/Zarinpal/Zarinpal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Gateways/Zarinpal/ZarinpalAdaptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Model/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Policies/PaymentPolicies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Providers/PaymentServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Repository/PaymentRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Route/payment_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/Payment/Services/PaymentService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Http/Controllers/RolePermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Http/Requests/RolePermissionRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Models/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Providers/RolePermissionServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Repositories/PermissionRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Repositories/RoleRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Resources/Views/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Resources/Views/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Resources/Views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/Routes/RolePermission_route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/database/Seeds/RolePermissionSeederTabel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/RolePermission/policies/RolePermissionPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Middleware/getUserIp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/AddRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/UpdateProfileRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/UpdateUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/UserPhotoRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/VerifyCodeRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/changePasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/sendVerifyCodeRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Requests/verifyCodeSendEmailRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Mail/VerifyCodeMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Mail/passwordResetRequestMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Notifications/passwordResetEmailNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Notifications/verifyEmailNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Policies/UserPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Providers/UserServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Repository/userRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Routes/user-route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Services/UserService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/Services/verifyCodeService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/database/Seeds/UserDefaultTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/admin/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/admin/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/passwords/enter-verify-code-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/mails/reset-password-verify-code.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/mails/verify_mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/saeid/User/resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/font/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery.toast.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/ltr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/digikala/digikala.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/digikala/digikala.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/digikala/digikala.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/digikala/digikala.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSans(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb(FaNum).eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb(FaNum)_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/eot/IRANSansWeb(FaNum)_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb(FaNum).ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb(FaNum)_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb(FaNum)_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb(FaNum)_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb(FaNum)_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb(FaNum)_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb(FaNum)_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff/IRANSansWeb(FaNum)_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb(FaNum)_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/iransans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/'1.mp4'" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Liquidate-square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ads/1440px/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/1000024381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/angularjs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/anuglar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/aparat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/boostrap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/cms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/digiphpmvc-angular.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/ee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/faranesh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/fgh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/javascript.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/lara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/laravel-payment-processing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/lll.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/nodejs-v8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/nodejs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/phpfull.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/react-redux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/reactjs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/restfull-lara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/blog-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/discont_badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/laravel-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/laravel-tel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/php.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/podcast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pricing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slideshow/p-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slideshow/p-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slideshow/p-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slideshow/p-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slideshow/p-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/st.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/st1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/star-empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/star-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/telgram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/video-thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/weblogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/workinja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/zip-thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/activation-code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/countDownTimer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.toast.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/css/jquery-modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/css/responsive_768.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/css/responsive_991.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/digikala/digikala.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/digikala/digikala.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/digikala/digikala.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/digikala/digikala.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSans(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSansWeb(FaNum).eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSansWeb(FaNum)_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSansWeb(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/eot/IRANSansWeb(FaNum)_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/ttf/IRANSansWeb(FaNum).ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/ttf/IRANSansWeb(FaNum)_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/ttf/IRANSansWeb(FaNum)_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/ttf/IRANSansWeb(FaNum)_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff/IRANSansWeb(FaNum)_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff/IRANSansWeb(FaNum)_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff/IRANSansWeb(FaNum)_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff/IRANSansWeb(FaNum)_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff2/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff2/IRANSansWeb(FaNum)_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/fonts/iransans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/angularjs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/anuglar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/aparat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/boostrap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/cms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/digiphpmvc-angular.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/ee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/faranesh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/fgh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/javascript.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/lara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/laravel-payment-processing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/lll.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/nodejs-v8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/nodejs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/phpfull.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/react-redux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/reactjs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/banner/restfull-lara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/laravel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/img/weblogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/js/jquery-modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/js/jquery.toast.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/js/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/panel/js/tagsInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/validation-inline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/user-photo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/valid-error.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/401.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/419.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/429.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/500.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/illustrated-layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/minimal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/saeid/User/resources/View/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/laravel/legacy-factories" />
+      <path value="$PROJECT_DIR$/vendor/uxweb/sweet-alert" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1oHc2ctgT4vYCAP6SdhdvmWFBOH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel - 20-4\modules\saeid\Payment" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel - 20-4\modules\saeid\User\resources\View\auth\passwords" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel - 20-4\modules\saeid\User\resources\View\auth" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel\resources\views" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel\modules\saeid\User\resources\View" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel - 20-4\modules\saeid\Payment\Resources" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel - 20-4\modules\saeid\User\resources\View\auth" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel\public\js" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel\public\css" />
+      <recent name="C:\Users\saeid\Desktop\laravel1\laravel\modules\saeid\Course\Policies" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.edit.blade.php">
+    <configuration name="edit.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/laravel/Resources/Views/edit.blade.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.edit.blade.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eae6b9c-547f-485a-865a-8d2f89920f1a" name="Default Changelist" comment="" />
+      <created>1612946750488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612946750488</updated>
+      <workItem from="1612946751687" duration="4091000" />
+      <workItem from="1612970048046" duration="23000" />
+      <workItem from="1613055761651" duration="7971000" />
+      <workItem from="1613119434422" duration="6759000" />
+      <workItem from="1613148262345" duration="4887000" />
+      <workItem from="1613226761880" duration="927000" />
+      <workItem from="1613243794715" duration="634000" />
+      <workItem from="1613580307308" duration="9849000" />
+      <workItem from="1613637304077" duration="5256000" />
+      <workItem from="1614245953727" duration="24000" />
+      <workItem from="1617697404896" duration="3761000" />
+      <workItem from="1617737769047" duration="622000" />
+      <workItem from="1617802233907" duration="3399000" />
+      <workItem from="1617810299627" duration="7292000" />
+      <workItem from="1617827304386" duration="3050000" />
+      <workItem from="1617910170490" duration="4146000" />
+      <workItem from="1618126109535" duration="5954000" />
+      <workItem from="1618150086713" duration="5956000" />
+      <workItem from="1618233074765" duration="629000" />
+      <workItem from="1618328523491" duration="11724000" />
+      <workItem from="1618404979545" duration="10960000" />
+      <workItem from="1618644400039" duration="39000" />
+      <workItem from="1618761866291" duration="881000" />
+      <workItem from="1619017884835" duration="3748000" />
+      <workItem from="1619031771451" duration="32000" />
+      <workItem from="1619371659017" duration="1822000" />
+      <workItem from="1619531708877" duration="1208000" />
+      <workItem from="1619547124761" duration="5643000" />
+      <workItem from="1619620559809" duration="7794000" />
+      <workItem from="1619634060288" duration="4691000" />
+      <workItem from="1619679405924" duration="4019000" />
+      <workItem from="1619684561875" duration="4190000" />
+      <workItem from="1619706980802" duration="521000" />
+      <workItem from="1619965254594" duration="11871000" />
+      <workItem from="1620047516824" duration="703000" />
+      <workItem from="1620114706760" duration="9256000" />
+      <workItem from="1620139713883" duration="4412000" />
+      <workItem from="1620200710448" duration="617000" />
+      <workItem from="1620750533130" duration="427000" />
+      <workItem from="1620847100034" duration="2721000" />
+      <workItem from="1620892274692" duration="689000" />
+      <workItem from="1622036805461" duration="6239000" />
+      <workItem from="1622124627143" duration="9232000" />
+      <workItem from="1622140635847" duration="747000" />
+      <workItem from="1622191940515" duration="2460000" />
+      <workItem from="1622213089188" duration="14130000" />
+      <workItem from="1622297340414" duration="1209000" />
+      <workItem from="1622464488612" duration="10925000" />
+      <workItem from="1622485039719" duration="3431000" />
+      <workItem from="1622529005890" duration="403000" />
+      <workItem from="1622660098940" duration="3589000" />
+      <workItem from="1622702245457" duration="8365000" />
+      <workItem from="1622790980396" duration="15582000" />
+      <workItem from="1622830505197" duration="7018000" />
+      <workItem from="1622878559023" duration="7904000" />
+      <workItem from="1622964058855" duration="9265000" />
+      <workItem from="1622986875097" duration="7425000" />
+      <workItem from="1623160568565" duration="25454000" />
+      <workItem from="1623316694551" duration="2018000" />
+      <workItem from="1623330428457" duration="386000" />
+      <workItem from="1623428389260" duration="12800000" />
+      <workItem from="1623482606931" duration="9786000" />
+      <workItem from="1623565745329" duration="8387000" />
+      <workItem from="1623596441434" duration="1347000" />
+      <workItem from="1623686261742" duration="5127000" />
+      <workItem from="1623766519730" duration="15103000" />
+      <workItem from="1623853783041" duration="7940000" />
+      <workItem from="1624029524171" duration="5707000" />
+      <workItem from="1624087774169" duration="4567000" />
+      <workItem from="1624113208927" duration="9604000" />
+      <workItem from="1624281133308" duration="6358000" />
+      <workItem from="1624301739674" duration="2930000" />
+      <workItem from="1624372959359" duration="7269000" />
+      <workItem from="1624435623175" duration="4157000" />
+      <workItem from="1624461549255" duration="5728000" />
+      <workItem from="1624474597797" duration="3518000" />
+      <workItem from="1624608721746" duration="3194000" />
+      <workItem from="1624633801229" duration="7653000" />
+      <workItem from="1624715308202" duration="8768000" />
+      <workItem from="1624732504992" duration="3454000" />
+      <workItem from="1624802093150" duration="1977000" />
+      <workItem from="1624819535600" duration="1953000" />
+      <workItem from="1624886574825" duration="4731000" />
+      <workItem from="1624948847679" duration="8733000" />
+      <workItem from="1624972295064" duration="7010000" />
+      <workItem from="1624992871840" duration="2596000" />
+      <workItem from="1625061020129" duration="1794000" />
+      <workItem from="1625074185054" duration="6474000" />
+      <workItem from="1625121234884" duration="4172000" />
+      <workItem from="1625216503446" duration="3120000" />
+      <workItem from="1625236520043" duration="13151000" />
+      <workItem from="1625319873392" duration="10741000" />
+      <workItem from="1625410959278" duration="8922000" />
+      <workItem from="1625424176986" duration="3164000" />
+      <workItem from="1625490068360" duration="6752000" />
+      <workItem from="1625555586360" duration="8277000" />
+      <workItem from="1625577254543" duration="8670000" />
+      <workItem from="1625597199862" duration="5093000" />
+      <workItem from="1625642348530" duration="8236000" />
+      <workItem from="1625664919471" duration="2156000" />
+      <workItem from="1625820590143" duration="3333000" />
+      <workItem from="1625840511093" duration="9937000" />
+      <workItem from="1625928621681" duration="5246000" />
+      <workItem from="1625944909415" duration="1556000" />
+      <workItem from="1626011568953" duration="12946000" />
+      <workItem from="1626076943043" duration="7469000" />
+      <workItem from="1626115405816" duration="3415000" />
+      <workItem from="1626194809931" duration="3992000" />
+      <workItem from="1626201349020" duration="5976000" />
+      <workItem from="1626267357610" duration="9047000" />
+      <workItem from="1626336387834" duration="3030000" />
+      <workItem from="1626367128304" duration="2563000" />
+      <workItem from="1626503826750" duration="7246000" />
+      <workItem from="1626532011333" duration="12824000" />
+      <workItem from="1626614531098" duration="10738000" />
+      <workItem from="1626706808764" duration="9081000" />
+      <workItem from="1626787941497" duration="6909000" />
+      <workItem from="1626880777711" duration="2536000" />
+      <workItem from="1626940054199" duration="5881000" />
+      <workItem from="1627024315347" duration="7021000" />
+      <workItem from="1627045468120" duration="731000" />
+      <workItem from="1627047910098" duration="51000" />
+      <workItem from="1627155555551" duration="1313000" />
+      <workItem from="1627209010712" duration="1076000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
